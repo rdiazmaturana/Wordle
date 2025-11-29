@@ -1,15 +1,13 @@
 import './App.css'
-import Row from './components/row'
+import Row from './components/Row'
+import { store } from './store'
 
 function App() {
 
+  console.log(store().selected);
+
   return (
     <>
-      <Row />
-      <Row />
-      <Row />
-      <Row />
-      <Row />
       <Row />
     </>
   )
