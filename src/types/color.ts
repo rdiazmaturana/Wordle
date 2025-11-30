@@ -1,0 +1,1 @@
+export type Color = "grey" | "green" | "#948500" | "transparent";

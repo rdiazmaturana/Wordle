@@ -7,14 +7,14 @@ type CellState = {
     setSelected: (id: number) => void;
 }
 
-export const store = create<CellState>((set) => ({
-    selected: 0,
-    increment: () => set((state) => { if (state.selected !== 4) {
+export const cellStore = create<CellState>((set) => ({
+    selected: 1,
+    increment: () => set((state) => { if (state.selected !== 5) {
         return { selected: state.selected + 1 }
     } else {
         return { selected: state.selected }
     }}),
-    decrement: () => set((state) => { if (state.selected !== 0) {
+    decrement: () => set((state) => { if (state.selected !== 1) {
         return { selected: state.selected - 1 }
     } else {
         return { selected: state.selected }
