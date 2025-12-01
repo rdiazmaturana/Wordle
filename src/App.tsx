@@ -23,6 +23,7 @@ function App() {
       </Slide>
       }
       <h1>Wordle</h1>
+      <h2 className="header" onClick={() => setIsOpen(true)}>COMO JUGAR</h2>
       {ids.map((n, i) => {
         return <Row key={i} id={n}/>
       })}
