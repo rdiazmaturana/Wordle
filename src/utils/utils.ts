@@ -2,7 +2,7 @@ import type { Color } from "../types/color";
 
 export const colorsRow = (input: string[], correct: string[]): Color[] => {
     const N = correct.length;
-    const result: Color[] = Array(N).fill("grey");
+    const result: Color[] = Array(N).fill("#757575");
 
     const counts: Record<string, number> = {};
 
@@ -13,16 +13,16 @@ export const colorsRow = (input: string[], correct: string[]): Color[] => {
 
     for (let i = 0; i < N; i++) {
         if (input[i] === correct[i]) {
-            result[i] = "green";
+            result[i] = "#43a047";
             counts[input[i]]!--;
         }
     }
 
     for (let i = 0; i < N; i++) {
-        if (result[i] !== "green") {
+        if (result[i] !== "#43a047") {
             const c = input[i];
             if (counts[c] > 0) {
-                result[i] = "#948500";
+                result[i] = "#e4a81d";
                 counts[c]!--;
             }
         }

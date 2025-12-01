@@ -1,1 +1,1 @@
-export type Color = "grey" | "green" | "#948500" | "transparent";
+export type Color = "#757575" | "#43a047" | "#e4a81d" | "transparent";

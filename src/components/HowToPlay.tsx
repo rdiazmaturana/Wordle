@@ -6,21 +6,7 @@ interface HowToPlayProps {
 
 const HowToPlay = ({ onClick }: HowToPlayProps) => {
     return (
-        <Container className="container">
-            <Typography className="header" variant="h2">COMO JUGAR</Typography>
-
-
-            {/** Título */}
-            <Container className="cells-container">
-                <Container className="cell title-element correct">W</Container>
-                <Container className="cell title-element correct">O</Container>
-                <Container className="cell title-element correct">R</Container>
-                <Container className="cell title-element correct">D</Container>
-                <Container className="cell title-element correct">L</Container>
-                <Container className="cell title-element correct">E</Container>
-            </Container>
-
-
+        <>
             {/** Explicación juego */}
             <Typography className="paragraph" variant="subtitle2">
                 El objetivo del juego es simple, adivinar la palabra oculta. La palabra tiene 5 letras y tienes 6 intentos para adivinarla. La palabra es la misma para todas las personas en ese día.
@@ -121,7 +107,7 @@ const HowToPlay = ({ onClick }: HowToPlayProps) => {
             {/** Listo para jugar */}
             <h3 className="sub-title">¿Listo/a para jugar?</h3>
             <button onClick={onClick} className="play">JUGAR AHORA</button>
-        </Container>
+        </>
     )
 }
 
